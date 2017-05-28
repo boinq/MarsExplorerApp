@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MarsInfo"
+             x:Class="MarsInfo.MainPage"
+             BackgroundColor="#666464">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Padding="6">
+            <Label x:Name="txtSol" Text = "--" FontSize="26" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label x:Name="txtlbl1" Text ="Today will be a lovely" FontSize="24" HorizontalOptions="Center"/>
+            <Label x:Name="txtMaxTemp" Text = "--" FontSize="140" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label x:Name="txtlbl2" Text ="But might go as low as" FontSize="24" HorizontalOptions="Center"/>
+            <Label x:Name="txtMinTemp" Text = "--" FontSize="44" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label x:Name="txtlbl3" Text ="The sun rises at" FontSize="22" HorizontalOptions="Center"/>
+            <Label x:Name="txtSunrise" Text = "--" FontSize="26" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label x:Name="txtlbl4" Text ="and sets at" FontSize="22" HorizontalOptions="Center"/>
+            <Label x:Name="txtSunset" Text = "--" FontSize="26" HorizontalOptions="Center" FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

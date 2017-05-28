@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarsInfo.ImageViewerPage"
+             BackgroundColor="#666464">
+    <ScrollView>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="4">
+            <Image x:Name="imgRover" Aspect="AspectFill"/>
+            <Label Text ="Instrument:" FontSize="20" HorizontalOptions="Start" TextColor="#C4BCB8"/>
+            <Label x:Name="txtInstrument" Text = "--" FontSize="24" HorizontalOptions="Start" FontAttributes="Bold" TextColor="#C4BCB8"/>
+            <Label Text ="Contributor:" FontSize="20" HorizontalOptions="Start" TextColor="#C4BCB8"/>
+            <Label x:Name="txtContributor" Text = "-" FontSize="24" HorizontalOptions="Start" FontAttributes="Bold" TextColor="#C4BCB8"/>
+            <Label Text ="Date added:" FontSize="20" HorizontalOptions="Start" TextColor="#C4BCB8"/>
+            <Label x:Name="txtDateAdded" Text = "-" FontSize="24" HorizontalOptions="Start" FontAttributes="Bold" TextColor="#C4BCB8"/>
+            <Label Text ="Camera xyz:" FontSize="20" HorizontalOptions="Start" TextColor="#C4BCB8"/>
+            <Label x:Name="txtXyz" Text = "-" FontSize="24" HorizontalOptions="Start" FontAttributes="Bold" TextColor="#C4BCB8"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

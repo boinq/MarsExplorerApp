@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarsInfo.SolDetailsPage"
+             BackgroundColor="#666464">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding ="2" Spacing="2">
+            <ListView  x:Name="lstView" ItemTapped="lstView_OnItemTapped" RowHeight="80" BackgroundColor="#666464">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" BackgroundColor="#666464" Padding="2" Spacing="1">
+                                <Label Text = "{Binding instrument, StringFormat='Instrument: {0}'}" FontAttributes="Bold" FontSize="18" HorizontalOptions="Start" TextColor="#C4BCB8"/>
+                                <Label Text = "{Binding utc, StringFormat='Added: {0:t}'}" FontSize="14" HorizontalOptions="Start" TextColor="#C4BCB8"/>
+                                <Label Text = "{Binding sampleType, StringFormat='Type: {0}'}" FontSize="14" HorizontalOptions="Start" TextColor="#C4BCB8"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btnRefresh" Text="Refresh" BackgroundColor="#6D6D6D" BorderColor="#914100" TextColor="#914100"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
